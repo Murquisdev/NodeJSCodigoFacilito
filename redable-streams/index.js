@@ -11,7 +11,7 @@ const fs = require("fs");
 const printPixels = require("./bmpPixelPrinter");
 
 const readableStream = fs.createReadStream("./inputImage.bmp");
-
+// Ponemos el Stream a la escucha para saber cuando hay datos disponibles
 readableStream.on("data", (chunk) => {
   //   console.log(chunk);
   printPixels(chunk);
