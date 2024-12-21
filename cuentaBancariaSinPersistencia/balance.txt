@@ -1,0 +1,12 @@
+{"Balance":6475}
+Saldo inicial: 5000
+Retirado: -300
+Ingresado: 300
+Ingresado: 300
+Ingresado: 300
+Retirado: -500
+Retirado: -500
+Ingresado: 300
+Ingresado: 300
+Ingresado: 750
+Ingresado: 525
