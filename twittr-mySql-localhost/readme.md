@@ -13,7 +13,7 @@ Se recomienda utilizar un _pool_ de conexiones y no una forma directa:
 | Obtención de conexión| `connection = await pool.getConnection()` | `connection = await mysql.createConnection()` |
 | Liberación/Cierre | `connection.release()` (devuelve al pool) | `connection.close()` (cierra la conexión) |
 | Cierre final | `pool.end()` (al finalizar la app) | No es necesario |
-| Exportación | `module.exports = pool;` (para reutilizar el pool) | No se exporta nada |
+| Exportación | `module.exports = pool;` (para reutilizar el pool) | `module.exports = getDirectConnection;` (para utilizar la conexión) |
 
 Las conexiones que se realicen se recomiendan utilizar un _pool_ de conexiones.
 
